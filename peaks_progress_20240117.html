@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_13c7a91499aaf8b967fdfa65035c1072 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_13c7a91499aaf8b967fdfa65035c1072" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_13c7a91499aaf8b967fdfa65035c1072 = L.map(
+                "map_13c7a91499aaf8b967fdfa65035c1072",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 1,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e275ca71e8f7a5fef71aa63d329aebbe = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_e275ca71e8f7a5fef71aa63d329aebbe.addTo(map_13c7a91499aaf8b967fdfa65035c1072);
+        
+    
+            var circle_marker_2b4bda910e6a4df81836be413c324b90 = L.circleMarker(
+                [49.1124718, 13.13619],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_13c7a91499aaf8b967fdfa65035c1072);
+        
+    
+        var popup_854ec10340754b10fbffd22643e8b533 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8a554bffad47085194410ed424a12303 = $(`<div id="html_8a554bffad47085194410ed424a12303" style="width: 100.0%; height: 100.0%;">Großer Arber<br> Elevation: 1456m, <br>Gelaufen:, 07.07.2020</div>`)[0];
+                popup_854ec10340754b10fbffd22643e8b533.setContent(html_8a554bffad47085194410ed424a12303);
+            
+        
+
+        circle_marker_2b4bda910e6a4df81836be413c324b90.bindPopup(popup_854ec10340754b10fbffd22643e8b533)
+        ;
+
+        
+    
+    
+            var circle_marker_81eb0ac5ffb2fd1860dd00e127cd85bf = L.circleMarker(
+                [48.9020427, 12.6969849],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_13c7a91499aaf8b967fdfa65035c1072);
+        
+    
+        var popup_5b9abb97518523069acee25b4e3783e4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_95a78e8d593258387e1c5164d6d02c27 = $(`<div id="html_95a78e8d593258387e1c5164d6d02c27" style="width: 100.0%; height: 100.0%;">Bogenberg<br> Elevation: 432m, <br>Gelaufen:, 30.06.2020</div>`)[0];
+                popup_5b9abb97518523069acee25b4e3783e4.setContent(html_95a78e8d593258387e1c5164d6d02c27);
+            
+        
+
+        circle_marker_81eb0ac5ffb2fd1860dd00e127cd85bf.bindPopup(popup_5b9abb97518523069acee25b4e3783e4)
+        ;
+
+        
+    
+    
+            var circle_marker_8f3b55b681618f29c47869e26a91bcec = L.circleMarker(
+                [48.9547041, 12.8429102],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_13c7a91499aaf8b967fdfa65035c1072);
+        
+    
+        var popup_547febb57dd002dfbd3749685f01598d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b0bd8ef4aea2c1f58df76c1d72158b40 = $(`<div id="html_b0bd8ef4aea2c1f58df76c1d72158b40" style="width: 100.0%; height: 100.0%;">Schopf<br> Elevation: 928m, <br>Gelaufen:, 14.07.2020</div>`)[0];
+                popup_547febb57dd002dfbd3749685f01598d.setContent(html_b0bd8ef4aea2c1f58df76c1d72158b40);
+            
+        
+
+        circle_marker_8f3b55b681618f29c47869e26a91bcec.bindPopup(popup_547febb57dd002dfbd3749685f01598d)
+        ;
+
+        
+    
+    
+            var circle_marker_9278624ad58c97d84b61498051164ad4 = L.circleMarker(
+                [48.9643769, 12.8800093],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_13c7a91499aaf8b967fdfa65035c1072);
+        
+    
+        var popup_1fd2fdae2e945222a91691db63dfca39 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_095ddbe3035b8f8df91c0e50364b57b0 = $(`<div id="html_095ddbe3035b8f8df91c0e50364b57b0" style="width: 100.0%; height: 100.0%;">Hirschenstein<br> Elevation: 1095m, <br>Gelaufen:, 14.07.2020</div>`)[0];
+                popup_1fd2fdae2e945222a91691db63dfca39.setContent(html_095ddbe3035b8f8df91c0e50364b57b0);
+            
+        
+
+        circle_marker_9278624ad58c97d84b61498051164ad4.bindPopup(popup_1fd2fdae2e945222a91691db63dfca39)
+        ;
+
+        
+    
+    
+            var circle_marker_70f56d6d1a862ec455c3f17601520196 = L.circleMarker(
+                [48.9503368, 12.8961756],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_13c7a91499aaf8b967fdfa65035c1072);
+        
+    
+        var popup_72b6fcae527dade29bf7bd7bda9e5214 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_18b9d20858333b1d58da253885280145 = $(`<div id="html_18b9d20858333b1d58da253885280145" style="width: 100.0%; height: 100.0%;">Klausenstein<br> Elevation: 1048m, <br>Gelaufen:, 14.07.2020</div>`)[0];
+                popup_72b6fcae527dade29bf7bd7bda9e5214.setContent(html_18b9d20858333b1d58da253885280145);
+            
+        
+
+        circle_marker_70f56d6d1a862ec455c3f17601520196.bindPopup(popup_72b6fcae527dade29bf7bd7bda9e5214)
+        ;
+
+        
+    
+    
+            var circle_marker_3cb02f54b63e63d0a5dfa9afb3ad9e9e = L.circleMarker(
+                [48.9485091, 12.8988447],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_13c7a91499aaf8b967fdfa65035c1072);
+        
+    
+        var popup_c63c9544444c2afd693559b591dd7aaa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_060d8a36f8ed28589a2e066755c81502 = $(`<div id="html_060d8a36f8ed28589a2e066755c81502" style="width: 100.0%; height: 100.0%;">Rauher Kulm<br> Elevation: 1050m, <br>Gelaufen:, 14.07.2020</div>`)[0];
+                popup_c63c9544444c2afd693559b591dd7aaa.setContent(html_060d8a36f8ed28589a2e066755c81502);
+            
+        
+
+        circle_marker_3cb02f54b63e63d0a5dfa9afb3ad9e9e.bindPopup(popup_c63c9544444c2afd693559b591dd7aaa)
+        ;
+
+        
+    
+    
+            var circle_marker_5ab389ae4bac3bdaf4b586b1794343c3 = L.circleMarker(
+                [48.897, 13.022],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_13c7a91499aaf8b967fdfa65035c1072);
+        
+    
+        var popup_70e137a64a975af6258b76ac02cf7cf7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c196b6487e6f36cdc497520ff3548c2 = $(`<div id="html_8c196b6487e6f36cdc497520ff3548c2" style="width: 100.0%; height: 100.0%;">Dreitannenriegel<br> Elevation: 1092m, <br>Gelaufen:, 13.09.2020</div>`)[0];
+                popup_70e137a64a975af6258b76ac02cf7cf7.setContent(html_8c196b6487e6f36cdc497520ff3548c2);
+            
+        
+
+        circle_marker_5ab389ae4bac3bdaf4b586b1794343c3.bindPopup(popup_70e137a64a975af6258b76ac02cf7cf7)
+        ;
+
+        
+    
+    
+            var circle_marker_f6835c42af8fb75259ca4403962ab1f7 = L.circleMarker(
+                [48.9240769, 13.0374226],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_13c7a91499aaf8b967fdfa65035c1072);
+        
+    
+        var popup_c795e8b6e5c21580ce449035f4a10194 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5449407c4a91cb09d8faa1972c07257a = $(`<div id="html_5449407c4a91cb09d8faa1972c07257a" style="width: 100.0%; height: 100.0%;">Geißkopf<br> Elevation: 1097m, <br>Gelaufen:, 13.09.2020</div>`)[0];
+                popup_c795e8b6e5c21580ce449035f4a10194.setContent(html_5449407c4a91cb09d8faa1972c07257a);
+            
+        
+
+        circle_marker_f6835c42af8fb75259ca4403962ab1f7.bindPopup(popup_c795e8b6e5c21580ce449035f4a10194)
+        ;
+
+        
+    
+    
+            var circle_marker_e4194f04d534d57dc6ee256f82ab766b = L.circleMarker(
+                [48.906548, 13.0300211],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_13c7a91499aaf8b967fdfa65035c1072);
+        
+    
+        var popup_8d0177258960915307b53011c7255718 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b3a3929ddc07966587b44be12a01461b = $(`<div id="html_b3a3929ddc07966587b44be12a01461b" style="width: 100.0%; height: 100.0%;">Breitenauriegel<br> Elevation: 1114m, <br>Gelaufen:, 13.09.2020</div>`)[0];
+                popup_8d0177258960915307b53011c7255718.setContent(html_b3a3929ddc07966587b44be12a01461b);
+            
+        
+
+        circle_marker_e4194f04d534d57dc6ee256f82ab766b.bindPopup(popup_8d0177258960915307b53011c7255718)
+        ;
+
+        
+    
+    
+            var circle_marker_e5c7d614508e5471e92659415925e83f = L.circleMarker(
+                [48.9578661, 12.7586805],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_13c7a91499aaf8b967fdfa65035c1072);
+        
+    
+        var popup_dd9de55a8596690ec327f3f853210d91 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4b339a513ec77103d5c22a003c457c26 = $(`<div id="html_4b339a513ec77103d5c22a003c457c26" style="width: 100.0%; height: 100.0%;">Buchaberg<br> Elevation: 593m, <br>Gelaufen:, 11.06.2022</div>`)[0];
+                popup_dd9de55a8596690ec327f3f853210d91.setContent(html_4b339a513ec77103d5c22a003c457c26);
+            
+        
+
+        circle_marker_e5c7d614508e5471e92659415925e83f.bindPopup(popup_dd9de55a8596690ec327f3f853210d91)
+        ;
+
+        
+    
+    
+            var circle_marker_ee1f04bbcf1ab19c13d4521365b3cc0f = L.circleMarker(
+                [48.9235396, 12.6035176],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_13c7a91499aaf8b967fdfa65035c1072);
+        
+    
+        var popup_cd12570aedae68dfffbae83a081738d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f74aeb6f7dc77e023e2f041dc9274d5c = $(`<div id="html_f74aeb6f7dc77e023e2f041dc9274d5c" style="width: 100.0%; height: 100.0%;">Garbuckel<br> Elevation: 323m, <br>Gelaufen:, 02.06.2023</div>`)[0];
+                popup_cd12570aedae68dfffbae83a081738d3.setContent(html_f74aeb6f7dc77e023e2f041dc9274d5c);
+            
+        
+
+        circle_marker_ee1f04bbcf1ab19c13d4521365b3cc0f.bindPopup(popup_cd12570aedae68dfffbae83a081738d3)
+        ;
+
+        
+    
+    
+            var circle_marker_21d9549880d663ea731ce1e26589d03f = L.circleMarker(
+                [48.979133, 12.7852738],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_13c7a91499aaf8b967fdfa65035c1072);
+        
+    
+        var popup_b2385d65a0cdc3097c2f55fc7f3e3ecf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6a731b069adc0143b63e61f9063ac8a9 = $(`<div id="html_6a731b069adc0143b63e61f9063ac8a9" style="width: 100.0%; height: 100.0%;">Urberberg<br> Elevation: 614m, <br>Gelaufen:, 11.06.2023</div>`)[0];
+                popup_b2385d65a0cdc3097c2f55fc7f3e3ecf.setContent(html_6a731b069adc0143b63e61f9063ac8a9);
+            
+        
+
+        circle_marker_21d9549880d663ea731ce1e26589d03f.bindPopup(popup_b2385d65a0cdc3097c2f55fc7f3e3ecf)
+        ;
+
+        
+    
+    
+            var circle_marker_33145514fd816db1c8aaa8c90f612f18 = L.circleMarker(
+                [48.9691622, 12.6820345],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_13c7a91499aaf8b967fdfa65035c1072);
+        
+    
+        var popup_dfa6cc1b722e3a955d8183a5eb20b447 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5d7bd948f92c95d87f3ce7453e727df1 = $(`<div id="html_5d7bd948f92c95d87f3ce7453e727df1" style="width: 100.0%; height: 100.0%;">Teufelsfelsen<br> Elevation: 410m, <br>Gelaufen:, 13.08.2023</div>`)[0];
+                popup_dfa6cc1b722e3a955d8183a5eb20b447.setContent(html_5d7bd948f92c95d87f3ce7453e727df1);
+            
+        
+
+        circle_marker_33145514fd816db1c8aaa8c90f612f18.bindPopup(popup_dfa6cc1b722e3a955d8183a5eb20b447)
+        ;
+
+        
+    
+    
+            var circle_marker_f9b64610ae9cbaa19c74015ee55ac2a4 = L.circleMarker(
+                [48.9800149, 12.7122376],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_13c7a91499aaf8b967fdfa65035c1072);
+        
+    
+        var popup_636cb5a656c86a808871eb6c53f9b03f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_565dcf61c299a520201837414f37e0e1 = $(`<div id="html_565dcf61c299a520201837414f37e0e1" style="width: 100.0%; height: 100.0%;">Kirnhöhe<br> Elevation: 468m, <br>Gelaufen:, 13.08.2023</div>`)[0];
+                popup_636cb5a656c86a808871eb6c53f9b03f.setContent(html_565dcf61c299a520201837414f37e0e1);
+            
+        
+
+        circle_marker_f9b64610ae9cbaa19c74015ee55ac2a4.bindPopup(popup_636cb5a656c86a808871eb6c53f9b03f)
+        ;
+
+        
+    
+    
+            var circle_marker_d1fb8cf870d373b9ad91ca5b5242be01 = L.circleMarker(
+                [48.9873931, 12.7032577],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_13c7a91499aaf8b967fdfa65035c1072);
+        
+    
+        var popup_929c4147d9fa19001e53f750b4884d69 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e3245ca10bcf1d80d8077f17bce80601 = $(`<div id="html_e3245ca10bcf1d80d8077f17bce80601" style="width: 100.0%; height: 100.0%;">Schwarzer Dachsberg<br> Elevation: 481m, <br>Gelaufen:, 13.08.2023</div>`)[0];
+                popup_929c4147d9fa19001e53f750b4884d69.setContent(html_e3245ca10bcf1d80d8077f17bce80601);
+            
+        
+
+        circle_marker_d1fb8cf870d373b9ad91ca5b5242be01.bindPopup(popup_929c4147d9fa19001e53f750b4884d69)
+        ;
+
+        
+    
+    
+            var circle_marker_302b3fd10b794532033d7b94b78f5dfb = L.circleMarker(
+                [48.9442217, 12.9019779],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_13c7a91499aaf8b967fdfa65035c1072);
+        
+    
+        var popup_5d14f60156e621e6724c88a122ff5ef5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_723f2f0be78471d7e78aa7186703d78a = $(`<div id="html_723f2f0be78471d7e78aa7186703d78a" style="width: 100.0%; height: 100.0%;">Riedberg<br> Elevation: 999m, <br>Gelaufen:, 24.06.2023</div>`)[0];
+                popup_5d14f60156e621e6724c88a122ff5ef5.setContent(html_723f2f0be78471d7e78aa7186703d78a);
+            
+        
+
+        circle_marker_302b3fd10b794532033d7b94b78f5dfb.bindPopup(popup_5d14f60156e621e6724c88a122ff5ef5)
+        ;
+
+        
+    
+    
+            var circle_marker_1b17f48c9e3b792763417496845e2a25 = L.circleMarker(
+                [48.9337549, 12.9053977],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_13c7a91499aaf8b967fdfa65035c1072);
+        
+    
+        var popup_344dbee91ffdd92cec16939431ab10e4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8e3d0e0683f00b3b1e9527dd9424b954 = $(`<div id="html_8e3d0e0683f00b3b1e9527dd9424b954" style="width: 100.0%; height: 100.0%;">Burgstein<br> Elevation: 830m, <br>Gelaufen:, 24.06.2023</div>`)[0];
+                popup_344dbee91ffdd92cec16939431ab10e4.setContent(html_8e3d0e0683f00b3b1e9527dd9424b954);
+            
+        
+
+        circle_marker_1b17f48c9e3b792763417496845e2a25.bindPopup(popup_344dbee91ffdd92cec16939431ab10e4)
+        ;
+
+        
+    
+    
+            var circle_marker_1c3b6af7e3e033b954a9383d2fb9e096 = L.circleMarker(
+                [49.02673, 12.5536376],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_13c7a91499aaf8b967fdfa65035c1072);
+        
+    
+        var popup_ecfd22beece72d1c09c6895dec1cbaea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_62212654fa5af9bb21ce9bf5f2d31c25 = $(`<div id="html_62212654fa5af9bb21ce9bf5f2d31c25" style="width: 100.0%; height: 100.0%;">Büscherl<br> Elevation: 740m, <br>Gelaufen:, nan</div>`)[0];
+                popup_ecfd22beece72d1c09c6895dec1cbaea.setContent(html_62212654fa5af9bb21ce9bf5f2d31c25);
+            
+        
+
+        circle_marker_1c3b6af7e3e033b954a9383d2fb9e096.bindPopup(popup_ecfd22beece72d1c09c6895dec1cbaea)
+        ;
+
+        
+    
+    
+            var circle_marker_660324e8ad9575219bf6db4b23117382 = L.circleMarker(
+                [49.0162402, 12.5500206],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_13c7a91499aaf8b967fdfa65035c1072);
+        
+    
+        var popup_4f8c757d3f4613c884b3d50831b6034e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_128bb86a4d56cc4d0abb7f911c6ca872 = $(`<div id="html_128bb86a4d56cc4d0abb7f911c6ca872" style="width: 100.0%; height: 100.0%;">Spangelberg<br> Elevation: 632m, <br>Gelaufen:, nan</div>`)[0];
+                popup_4f8c757d3f4613c884b3d50831b6034e.setContent(html_128bb86a4d56cc4d0abb7f911c6ca872);
+            
+        
+
+        circle_marker_660324e8ad9575219bf6db4b23117382.bindPopup(popup_4f8c757d3f4613c884b3d50831b6034e)
+        ;
+
+        
+    
+    
+            map_13c7a91499aaf8b967fdfa65035c1072.fitBounds(
+                [[48.897, 12.5500206], [49.1124718, 13.13619]],
+                {}
+            );
+        
+</script>
+</html>
