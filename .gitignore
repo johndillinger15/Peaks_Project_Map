@@ -12,6 +12,6 @@ ehthumbs.db
 $RECYCLE.BIN/
 
 .cache
-cache
+cache/
 
 .vscode
