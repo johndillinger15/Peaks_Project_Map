@@ -1,4 +1,5 @@
 import pandas as pd
+import json
 import folium
 import osmnx as ox
 import geopandas as gpd
@@ -70,3 +71,17 @@ map_peaks.fit_bounds(map_peaks.get_bounds())
 map_peaks.save('peaks_progress.html')
 map_peaks.save('/Users/stefandillinger/Nextcloud/Daten/Training/peaks_progress.html')
 map_peaks.save('/Users/stefandillinger/Documents/11ty/raincastle_blog/assets/peaks_progress.html')
+
+############ JSON Files for Website
+# Calculate the number of entries in the 'gelaufen' column of peaks_data dataframe
+gelaufen_entries = len(imported_peaks_data['gelaufen'])
+# Calculate the number of entries in peaks_raw_data dataframe
+raw_data_entries = len(peaks_data)
+# Create a dictionary to store the counts
+counts_data = {
+    "gelaufen_entries": gelaufen_entries,
+    "raw_data_entries": raw_data_entries
+}
+# Write the counts data to a JSON file
+with open('/Users/stefandillinger/Documents/11ty/raincastle_blog/content/_data/counts_data.json', 'w') as json_file:
+    json.dump(counts_data, json_file)
