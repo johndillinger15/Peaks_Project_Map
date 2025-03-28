@@ -1,10 +1,11 @@
+import os
 import pandas as pd
 import json
 import folium
 import osmnx as ox
 import geopandas as gpd
+import gpxpy
 from math import radians, sin, cos, sqrt, atan2
-
 
 ######################## Get most recent Peaks_List
 # Define the place (Bavarian Forest) using its name
@@ -59,14 +60,39 @@ map_peaks = folium.Map(tiles='openstreetmap')
 for index, row in imported_peaks_data.iterrows():
     folium.CircleMarker(
         location=[row['latitude'], row['longitude']],
-        popup=f"{row['name']}<br> Elevation: {row['elevation']}m, <br>Gelaufen:, {row['gelaufen']}",
+        popup=f"{row['name']}<br> Elevation: {row['elevation']}m, <br>Gelaufen: {row['gelaufen']}",
         color=color_palette[row['type']],
         fill=True,
         fill_opacity=0.75,
         radius=10
     ).add_to(map_peaks)
-# Fit the map to include all circle markers
+
+############### Add GPX Tracks to the Map ################
+gpx_folder = "./gpx/"  # Change this to your GPX file folder
+
+# Function to parse GPX tracks
+def parse_gpx(file_path):
+    with open(file_path, 'r') as gpx_file:
+        gpx = gpxpy.parse(gpx_file)
+        tracks = []
+        for track in gpx.tracks:
+            for segment in track.segments:
+                track_points = [(point.latitude, point.longitude) for point in segment.points]
+                tracks.append(track_points)
+        return tracks
+
+# Loop through GPX files and add tracks to the map
+for filename in os.listdir(gpx_folder):
+    if filename.endswith(".gpx"):
+        file_path = os.path.join(gpx_folder, filename)
+        tracks = parse_gpx(file_path)
+        for track in tracks:
+            folium.PolyLine(track, color="firebrick", weight=2, opacity=0.7).add_to(map_peaks)
+
+############### Finalize Map ################
+# Fit the map to include all elements
 map_peaks.fit_bounds(map_peaks.get_bounds())
+
 # Save the map
 map_peaks.save('peaks_progress.html')
 map_peaks.save('/Users/stefandillinger/Nextcloud/Daten/Training/peaks_progress.html')
@@ -85,3 +111,5 @@ counts_data = {
 # Write the counts data to a JSON file
 with open('/Users/stefandillinger/Documents/11ty/raincastle_blog/content/_data/counts_data.json', 'w') as json_file:
     json.dump(counts_data, json_file)
+
+print("Map with GPX tracks and peaks has been updated successfully.")
