@@ -64,7 +64,7 @@ for index, row in imported_peaks_data.iterrows():
         color=color_palette[row['type']],
         fill=True,
         fill_opacity=0.75,
-        radius=10
+        radius=8
     ).add_to(map_peaks)
 
 ############### Add GPX Tracks to the Map ################
@@ -95,7 +95,7 @@ map_peaks.fit_bounds(map_peaks.get_bounds())
 
 # Save the map
 map_peaks.save('peaks_progress.html')
-map_peaks.save('/Users/stefandillinger/Nextcloud/Daten/Training/peaks_progress.html')
+map_peaks.save('/Users/stefandillinger/Nextcloud/Training/peaks_progress.html')
 map_peaks.save('/Users/stefandillinger/Documents/11ty/raincastle_blog/assets/peaks_progress.html')
 
 ############ JSON Files for Website
